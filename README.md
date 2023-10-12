@@ -4,3 +4,4 @@
 window.name='alert(1)'
 reportError(name , enerror=eval)
 ```
+2-If you see `returnTo=` in login url , add `javascript:alert(1)` and login > xss alert
