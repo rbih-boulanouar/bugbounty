@@ -1,3 +1,5 @@
+# General tips
+changing Exif metadata of an image can lead to XSS, RCE ...  [learn more](https://gokulvinesh.medium.com/rce-xss-via-image-exif-metadata-dddf33dadb41).
 # XSS
 1-The new reportError() function enables a quite amusing XSS vector:
 ```
