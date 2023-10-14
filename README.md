@@ -11,12 +11,12 @@ reportError(name , enerror=eval)
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
-For XSS / CRLF injection.
-🔹LF: %0A (\u000A)
-🔹VT: %0B (\u000B)
-🔹FF: %0C (\u000C)
-🔹CR: %0D (\u000D)
-🔹CR+LF: %0D%0A (\u000D\u000A)
-🔹NEL: %C2%85 (\u0085)
-🔹LS: %E2%80%A8 (\u2028)
-🔹PS: %E2%80%A9 (\u2029)
+For XSS / CRLF injection.<br>
+🔹LF: %0A (\u000A)<br>
+🔹VT: %0B (\u000B)<br>
+🔹FF: %0C (\u000C)<br>
+🔹CR: %0D (\u000D)<br>
+🔹CR+LF: %0D%0A (\u000D\u000A)<br>
+🔹NEL: %C2%85 (\u0085)<br>
+🔹LS: %E2%80%A8 (\u2028)<br>
+🔹PS: %E2%80%A9 (\u2029)<br>
