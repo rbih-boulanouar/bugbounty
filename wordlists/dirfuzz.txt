@@ -1,2 +1,3 @@
 /_wpeprivate/config.json
 /.env.example
+/wp-config.php.bak 
