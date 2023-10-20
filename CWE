@@ -1,0 +1,50 @@
+CWE-20: Improper Input Validation
+CWE-22: Path Traversal
+CWE-77: Command Injection
+CWE-78: OS Command Injection
+CWE-79: Cross-site Scripting (XSS)
+CWE-80: Basic XSS
+CWE-89: SQL Injection
+CWE-90: LDAP Injection
+CWE-94: Code Injection
+CWE-99: HTTP Response Splitting
+CWE-113: Improper Neutralization of CRLF Sequences in HTTP Headers
+CWE-120: Buffer Copy without Checking Size of Input
+CWE-126: Buffer Overread
+CWE-131: Incorrect Calculation of Buffer Size
+CWE-134: Uncontrolled Format String
+CWE-190: Integer Overflow or Wraparound
+CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+CWE-209: Information Exposure Through an Error Message
+CWE-213: Intentional Information Exposure
+CWE-215: Information Exposure Through Debug Information
+CWE-235: Improper Handling of Extra Parameters
+CWE-250: Execution with Unnecessary Privileges
+CWE-284: Improper Access Control
+CWE-306: Missing Authentication for Critical Function
+CWE-307: Improper Restriction of Excessive Authentication Attempts
+CWE-311: Missing Encryption of Sensitive Data
+CWE-312: Cleartext Storage of Sensitive Information
+CWE-319: Cleartext Transmission of Sensitive Information
+CWE-352: Cross-Site Request Forgery (CSRF)
+CWE-362: Race Condition
+CWE-367: Time-of-check Time-of-use (TOCTOU) Race Condition
+CWE-384: Session Fixation
+CWE-400: Uncontrolled Resource Consumption
+CWE-416: Use After Free
+CWE-426: Untrusted Search Path
+CWE-434: Unrestricted Upload of File with Dangerous Type
+CWE-472: External Control of Assumed-Immutable Web Parameter
+CWE-476: NULL Pointer Dereference
+CWE-494: Download of Code Without Integrity Check
+CWE-502: Deserialization of Untrusted Data
+CWE-521: Weak Password Requirements
+CWE-522: Insufficiently Protected Credentials
+CWE-601: URL Redirection to Untrusted Site (‘Open Redirect’)
+CWE-611: Improper Restriction of XML External Entity Reference (XXE)
+CWE-614: Sensitive Cookie in HTTPS Session Without ‘Secure’ Attribute
+CWE-732: Incorrect Permission Assignment for Critical Resource
+CWE-759: Use of a One-Way Hash without a Salt
+CWE-798: Use of Hard-coded Credentials
+CWE-807: Reliance on Untrusted Inputs in a Security Decision
+CWE-918: Server-Side Request Forgery (SSRF)
