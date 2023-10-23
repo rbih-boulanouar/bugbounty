@@ -24,3 +24,10 @@ For XSS / CRLF injection.<br>
 🔹NEL: %C2%85 (\u0085)<br>
 🔹LS: %E2%80%A8 (\u2028)<br>
 🔹PS: %E2%80%A9 (\u2029)<br>
+# IDOR:
+1-<br>
+```
+/api/getUser$FUZZ$
+-> /api/getUserv1
+-> /api/getUserBeta
+```
