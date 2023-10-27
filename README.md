@@ -67,6 +67,56 @@ IPs can be represented in many ways including:
 Try different representations.
 
 You might get lucky.
+
+4-Can't hit 169.254.169.254?
+
+On AWS, "instance-data" resolves to the metadata server.
+
+Try hitting http://instance-data instead.
+
+5- Know your target's technologies.
+
+Look at job postings!
+
+You might not be able to hit a meta-data service.
+
+But there are likely other internal services!
+
+(ex: I've pulled data from an internal Elasticsearch instance)
+
+6- Are they using Kubernetes?
+
+Search Burp history for ".default.svc" or ".cluster.local"
+
+If you find references, try to hit them.
+
+Also, try to hit the Kubernetes API: https://kubernetes.default.svc
+
+7- In Kubernetes, you should be brute-forcing for:
+
+HOSTNAME.<some-namespace>.svc.cluster.local
+
+I often use Burp Intruder: FUZZ.default.svc.cluster.local
+
+Need better wordlists?
+
+Scrape helm charts from ArtifactHub.
+
+8- Can't supply a full URL? You can still get SSRF!
+
+If your input is used to build a URL, THINK.
+
+Learn about URL structures.
+
+The following 4 characters have led to many SSRFs:
+
+• @<br>
+• ?<br>
+• #<br>
+• ;<br>
+
+An example is in the picture:
+![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/images/img1.jpeg)
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
