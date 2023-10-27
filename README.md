@@ -25,6 +25,24 @@ reportError(name , enerror=eval)
 <img/src/onerror=alert&#xFEFF;(1337)>
 ```
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Whitespace%20Separators.jpeg)
+
+# SSRF
+1-Try other URL schemes:<br>
+```
+• file:// (file read)
+• netdoc:// (file read)
+• dict://
+• gopher://
+• jar://
+• ldap://
+• and more!
+```
+<br>
+You might be able to get file read.
+<br>
+Or send multi-line requests to gain additional impact
+<br>
+(Ex: gopher + redis = likely RCE)
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
