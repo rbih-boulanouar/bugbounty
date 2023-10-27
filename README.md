@@ -117,6 +117,24 @@ The following 4 characters have led to many SSRFs:
 
 An example is in the picture:
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/images/img1.jpeg)
+
+9- If your injection is down the path, traverse!
+```
+GET /vulnerable?id=1234
+
+|> app fetches: http://some-api/api/v1/1234
+```
+```
+
+GET /vulnerable?id=../../
+
+|> app fetches: http://some-api/api/v1/../../
+```
+
+Find an open redirect & you probably have SSRF.
+
+Or likely can hit internal endpoints.
+
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
