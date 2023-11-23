@@ -156,6 +156,7 @@ Use redirects from a custom domain to a blocked IP to catch applications off-gua
 Here’s a simple PHP script to perform the redirect.
 
 `<?php header(“Location: http://169.254.169.254/”) ?>`
+
 12- DNS Rebinding
 
 Use TOCTOU vulnerabilities, by providing alternating DNS responses to breach. 
