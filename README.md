@@ -138,6 +138,7 @@ GET /vulnerable?id=../../
 Find an open redirect & you probably have SSRF.
 
 Or likely can hit internal endpoints.
+
 10- Use Hostnames Instead of IPs
 
 Use services like `http://nip.io` to bypass direct IP bans. 
