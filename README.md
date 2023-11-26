@@ -1,6 +1,6 @@
-  <head>
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-  </head>
+<head>
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
 # General tips
 changing Exif metadata of an image can lead to XSS, RCE ...  [learn more](https://gokulvinesh.medium.com/rce-xss-via-image-exif-metadata-dddf33dadb41).
 # RCE
