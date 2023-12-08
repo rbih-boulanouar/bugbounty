@@ -1,4 +1,4 @@
-![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/images/Lets-Dig-into-the-Robust-Bug-Bounty-Program-Developed-by-Google.webp)
+![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/images/Lets-Dig-into-the-Robust-Bug-Bounty-Program-Developed-by-Google.png)
 # General tips
 changing Exif metadata of an image can lead to XSS, RCE ...  [learn more](https://gokulvinesh.medium.com/rce-xss-via-image-exif-metadata-dddf33dadb41).
 # RCE
