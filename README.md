@@ -2,6 +2,9 @@
 # General tips
 1-changing Exif metadata of an image can lead to XSS, RCE ...  [learn more](https://gokulvinesh.medium.com/rce-xss-via-image-exif-metadata-dddf33dadb41).
 
+2-If there is a route to `/blog`
+don't forget to test `/blog/.env` 
+
 # Recon
 1-Google Dorks for recon
 ```
