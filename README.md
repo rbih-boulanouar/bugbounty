@@ -222,3 +222,14 @@ For XSS / CRLF injection.<br>
 -> /api/getUserv1
 -> /api/getUserBeta
 ```
+2-if you find something like this
+```
+POST /api/v3/SetEmail
+```
+-try to change v3 to v2,v1,v1-beta...
+
+-add some parameter for example userid 
+```
+/api/v3/SetEmail/1337
+```
+-try to remove cookies or set unvalid ones
