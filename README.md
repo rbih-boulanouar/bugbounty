@@ -5,7 +5,13 @@
 2-If there is a route to `/blog`
 don't forget to test `/blog/.env` 
 
-2-If you find Web frameworks like Symfony, add `/app_dev.php/_profiler/open?file=app/config/parameters.yml` to the wordlist, and you may get juicy data.
+3-If you find Web frameworks like Symfony, add 
+
+`/app_dev.php/_profiler/open?file=app/config/parameters.yml`
+`/app_dev.php/_profiler/open?file=app/config/parameters.yml.dist`
+`/app_dev.php/_profiler/open?file=app/config/security.yml`
+
+to the wordlist, and you may get juicy data.
 
 # Recon
 1-Google Dorks for recon
