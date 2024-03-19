@@ -1,3 +1,5 @@
-/_wpeprivate/config.json
-/.env.example
-/wp-config.php.bak 
+_wpeprivate/config.json
+.env.example
+wp-config.php.bak 
+web/app_dev.php
+app_dev.php
