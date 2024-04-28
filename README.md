@@ -87,7 +87,11 @@ Reasons:
 1. It loads a remote script 
 2. It pops in SOURCE and DOM
 3. It allows custom code in URL hash
-   
+
+8-waybackurls+ kxss
+```
+waybackurls target | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' | sort -u | sed 's/\(=[^&]*\)/=/g' | tee urls-xss.txt | sort -u -o urls-xss.txt && cat urls-xss.txt | kxss
+```
 # SSRF
 1-Try other URL schemes:<br>
 ```
