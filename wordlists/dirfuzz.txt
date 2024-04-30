@@ -3,3 +3,4 @@ _wpeprivate/config.json
 wp-config.php.bak 
 web/app_dev.php
 app_dev.php
+.ftpconfig
