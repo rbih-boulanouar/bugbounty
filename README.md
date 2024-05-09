@@ -15,6 +15,10 @@ to the wordlist, and you may get juicy data.
 
 4-Use http://censys.io for finding hidden domain IPs and and try to open the website in the browser with only IP address this time WAF not restrict the request
 
+5-get all inscope from h1
+```
+bbscope h1 -t Token -u username -b -o t
+```
 # Recon
 1-Google Dorks for recon
 ```
