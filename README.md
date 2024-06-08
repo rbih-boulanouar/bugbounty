@@ -56,7 +56,7 @@ cat urls.txt | grep -E '\bhttps?://\S+?=\S+' | grep -E '\.php|\.asp' > asphpfile
 ```
 7-get new registred subdomains
 ```
-gungnir -r domain.txt | anew subdomains.txt | notify -v
+gungnir -r domain.txt | anew subdomains.txt | notify -bulk
 ```
 # RCE
 1-If you discover a node.js template area, you should try triggerable node payload </br>
